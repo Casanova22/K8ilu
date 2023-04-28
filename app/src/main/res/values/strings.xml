@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">K8 đi lâu</string>
+
+    <string name="b1">TRANG CHỦ</string>
+    <string name="b2">VỀ ỨNG DỤNG</string>
+
+    <string name="press_back">Press back again to exit</string>
+    <string name="info_title">Bóng Đá - Trang Bị</string>
+</resources>

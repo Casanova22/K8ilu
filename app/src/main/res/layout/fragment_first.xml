@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.core.widget.NestedScrollView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    style="@style/MatchParent"-->
+<!--    android:background="@drawable/app_bg"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    tools:context=".FragmentFirst">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        style="@style/MatchParent">-->
+
+<!--        <androidx.appcompat.widget.AppCompatImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:id="@+id/header_banner"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:contentDescription="@null"-->
+<!--            android:background="@drawable/nav_title"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            />-->
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/contents_container"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="16dp"-->
+<!--            app:cardCornerRadius="16dp"-->
+<!--            app:cardElevation="4dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintDimensionRatio="1:1"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/header_banner"-->
+<!--            app:strokeColor="@color/white"-->
+<!--            app:strokeWidth="3dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                android:background="@drawable/card_gradient"-->
+<!--                android:padding="16dp">-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/button1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    app:cardBackgroundColor="#640300"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    app:cardCornerRadius="80dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    app:cardElevation="2dp"-->
+<!--                    app:strokeColor="#B5B5B5"-->
+<!--                    app:strokeWidth="2dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        style="@style/MatchParent"-->
+<!--                        android:id="@+id/rl_1"-->
+<!--                        android:layout_marginStart="100dp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                        <com.google.android.material.imageview.ShapeableImageView-->
+<!--                            android:id="@+id/shapeable_card_image1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="@drawable/tab_gradient"-->
+<!--                            app:shapeAppearance="@style/strat_image"-->
+<!--                            />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/b1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:layout_marginEnd="40dp"-->
+<!--                            android:fontFamily="sans-serif"-->
+<!--                            android:letterSpacing="0.1"-->
+<!--                            android:shadowColor="#2D2C2D"-->
+<!--                            android:shadowRadius="10"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="#FFFFFF"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/relativeLayout1"-->
+<!--                        android:layout_width="95dp"-->
+<!--                        android:layout_height="95dp"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:elevation="4dp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/index_icon"-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:src="@drawable/tab1"-->
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+<!--                <com.google.android.material.card.MaterialCardView-->
+<!--                    android:id="@+id/button2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="120dp"-->
+<!--                    android:layout_below="@id/button1"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    app:cardBackgroundColor="#640300"-->
+<!--                    app:cardCornerRadius="80dp"-->
+<!--                    android:focusable="true"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusableInTouchMode="true"-->
+<!--                    app:cardElevation="2dp"-->
+<!--                    app:strokeColor="#B5B5B5"-->
+<!--                    app:strokeWidth="2dp">-->
+
+<!--                    <RelativeLayout-->
+<!--                        style="@style/MatchParent"-->
+<!--                        android:id="@+id/rl_2"-->
+<!--                        android:layout_marginStart="100dp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintEnd_toEndOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                        <com.google.android.material.imageview.ShapeableImageView-->
+<!--                            android:id="@+id/shapeable_card_image"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:background="@drawable/tab_gradient"-->
+<!--                            app:shapeAppearance="@style/strat_image"-->
+<!--                            />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/b2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentStart="true"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:layout_marginStart="60dp"-->
+<!--                            android:layout_marginTop="20dp"-->
+<!--                            android:layout_marginEnd="40dp"-->
+<!--                            android:fontFamily="sans-serif"-->
+<!--                            android:letterSpacing="0.1"-->
+<!--                            android:shadowColor="#2D2C2D"-->
+<!--                            android:shadowRadius="10"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="#FFFFFF"-->
+<!--                            android:textSize="18sp"-->
+<!--                            android:textStyle="bold"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintTop_toTopOf="parent" />-->
+<!--                    </RelativeLayout>-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:id="@+id/relativeLayout"-->
+<!--                        android:layout_width="95dp"-->
+<!--                        android:layout_height="95dp"-->
+<!--                        android:layout_marginStart="10dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:elevation="4dp"-->
+<!--                        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                        app:layout_constraintStart_toStartOf="parent"-->
+<!--                        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/strat_icon"-->
+<!--                            android:layout_width="80dp"-->
+<!--                            android:layout_height="80dp"-->
+<!--                            android:layout_centerInParent="true"-->
+<!--                            android:src="@drawable/tab2"-->
+<!--                            />-->
+<!--                    </RelativeLayout>-->
+<!--                </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--            </RelativeLayout>-->
+<!--        </com.google.android.material.card.MaterialCardView>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--</androidx.core.widget.NestedScrollView>-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:id="@+id/navFl"
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:layout_above="@id/scrollView2"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/nav_title"
+        />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/logo"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="@integer/material_motion_duration_long_1"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="25dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_selector2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/b1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:letterSpacing=".1"
+                            android:shadowColor="#A8A6A6"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="10"
+                            android:textAllCaps="false"
+                            android:textColor="#FFFFFF"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="10dp"
+                    android:elevation="5dp"
+                    android:background="@drawable/button_selector2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/b2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:letterSpacing=".1"
+                            android:shadowColor="#A8A6A6"
+                            android:shadowDx="5"
+                            android:shadowDy="5"
+                            android:shadowRadius="15"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                        />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

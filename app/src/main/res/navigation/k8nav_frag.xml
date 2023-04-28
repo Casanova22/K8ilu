@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/k8nav_frag"
+    app:startDestination="@id/K8FirstFragment">
+
+    <fragment
+        android:id="@+id/K8FirstFragment"
+        android:name="kapagod.na.k8ilu.K8FragmentFirst"
+        android:label="K8 First Fragment"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_InfoFragment"
+            app:destination="@id/K8ThirdFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/K8SecondFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/K8SecondFragment"
+        android:name="kapagod.na.k8ilu.K8FragmentSecond"
+        android:label="K8 Second Fragment"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@+id/K8FirstFragment"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/K8ThirdFragment"
+        android:name="kapagod.na.k8ilu.K8FragmentThird"
+        android:label="K8 Third Fragment"
+        tools:layout="@layout/fragment_third">
+        <action
+            android:id="@+id/action_InfoFragment_to_FirstFragment"
+            app:destination="@id/K8FirstFragment" />
+    </fragment>
+
+</navigation>
